@@ -1,10 +1,10 @@
 # -*- coding: UTF-8 -*-
 """
 @author: ycx
-@date: 2018/11/26 
+@date: 2018/10/18
 """
 from flask import Blueprint
 
-html = Blueprint("html", __name__)
+plans = Blueprint("plans", __name__)
 
-from . import htmls
+from . import plan
