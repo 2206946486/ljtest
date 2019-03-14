@@ -13,7 +13,7 @@ class OnlineConfig(Config):
     MYSQL_HOST = "localhost"
     MYSQL_PORT = 3306
     MYSQL_USER = "root"
-    MYSQL_PWD = "admin123"
+    MYSQL_PWD = "admin"
     MYSQL_DB = "iot"
     SQLALCHEMY_DATABASE_URI = "mysql://{user}:{pwd}@{host}:{port}/{db}".format(user=MYSQL_USER, pwd=MYSQL_PWD,
                                                                                host=MYSQL_HOST,
@@ -22,7 +22,7 @@ class OnlineConfig(Config):
     # redis
     REDIS_HOST = "r-wz91122e8d2dd9b4.redis.rds.aliyuncs.com"
     REDIS_PORT = 6379
-    REDIS_PWD = "admin123"
+    REDIS_PWD = "admin"
     REDIS_DB = 3
     REDIS_URL = "redis://:{pwd}@{host}:{port}/{db}".format(pwd=REDIS_PWD,
                                                            host=REDIS_HOST,
