@@ -19,13 +19,16 @@ def after_request(response):
     response.headers.add("Access-Control-Allow-Credentials", "true")
     return response
 
+
 @app.errorhandler(EnvError)
 def env_error(e):
     return res(State.ENV_ERROR)
 
+
 @app.errorhandler(SchemaError)
 def schema_error(e):
     return res(State.PARAMS_ERROR)
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000)
